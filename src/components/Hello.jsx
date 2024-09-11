@@ -1,7 +1,10 @@
-function Hello() {
+function Hello({ person }) {
   return (
     <>
-      <h1>Hello form components!</h1>
+      <h1>
+        {person.message} {person.name} {person.emoji}
+        {person.seatNumbers}
+      </h1>
     </>
   );
 }
